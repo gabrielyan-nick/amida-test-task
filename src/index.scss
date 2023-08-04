@@ -1,0 +1,144 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Monoton&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  position: relative;
+  background-color: #394747;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  background-color: #323232;
+}
+
+header {
+  background-color: #0d7377;
+}
+
+.logo {
+  color: #14ffec;
+  font-family: "Monoton", cursive;
+}
+
+.btn-primary {
+  border: none;
+  --bs-btn-bg: #099e9d;
+  --bs-btn-hover-bg: #0cc0c0;
+  --bs-btn-active-bg: #098a8a;
+  --bs-btn-disabled-bg: #07414194;
+  min-width: 97px;
+}
+
+.btn-secondary {
+  border: none;
+  --bs-btn-bg: #41838398;
+  --bs-btn-hover-bg: #54b6b6a4;
+  --bs-btn-active-bg: #396d6db4;
+  --bs-btn-disabled-bg: #3d55556c;
+  height: 24px;
+  display: flex;
+}
+
+.btn-danger {
+  border: none;
+  --bs-btn-bg: #a86067;
+  --bs-btn-hover-bg: #c45d67;
+  --bs-btn-active-bg: #8f4b52;
+  --bs-btn-disabled-bg: #554143af;
+}
+
+.primary-text {
+  color: #a7f9eb;
+}
+
+.bg-light {
+  background-color: #ffffff9e;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.card {
+  height: 350px;
+  width: 90%;
+  background-color: #4b4b4d;
+  border: 4px solid #21989677;
+  transition: border 0.2s;
+  &:hover {
+    border-color: #24aaa8;
+  }
+}
+
+.price {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  padding: 1px 3px;
+  background-color: #3f4343;
+}
+
+.dropdown {
+  position: relative;
+  height: max-content;
+  &-menu {
+    min-width: 250px;
+    width: max-content;
+    background-color: #83eff2;
+  }
+  & .dropdown-toggle {
+    padding: 3px 12px;
+    & div {
+      width: 20px;
+      top: 10px;
+      left: 27px;
+    }
+  }
+  & svg {
+    fill: #323232;
+  }
+}
+
+.quantity-btn {
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0px 7px 2px 7px;
+}
+
+.cart-overflow {
+  max-height: 500px;
+  overflow-y: scroll;
+}
